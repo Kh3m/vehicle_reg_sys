@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<GridPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        prefHeight="400.0" prefWidth="600.0"
+        fx:controller="vdlrs.controllers.LicenseController"
+        hgap="10" vgap="10">
+
+    <Label text="Registration No." GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200" fx:id="txtRegNo"/>
+    <Label text="Applicant Name" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+    <TextField GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="200" fx:id="txtApplicantName"/>
+    <Label text="Date Issued" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+    <DatePicker GridPane.columnIndex="5" GridPane.rowIndex="0" prefWidth="200" fx:id="dpDateIssued"/>
+    <Label text="Expiring Date" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="200"  fx:id="dpExpiringDate"/>
+
+    <Button text="Generate" GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="200" onAction="#licenseRegHandler"/>
+
+</GridPane>

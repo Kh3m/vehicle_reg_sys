@@ -1,0 +1,16 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.text.Text?>
+<VBox fx:controller="vdlrs.controllers.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+    <padding>
+        <Insets topRightBottomLeft="30" />
+    </padding>
+    <Text fx:id="txtErrorMsg" />
+
+    <TextField promptText="Username" fx:id="txtUserName"/>
+    <PasswordField promptText="Password" fx:id="pwdPassword"/>
+    <Button text="Login" onAction="#loginHandler" fx:id="btnLogin"/>
+</VBox>

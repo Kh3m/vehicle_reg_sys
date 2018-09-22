@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="vdlrs.controllers.SplashController"
+      prefHeight="400.0" prefWidth="600.0" alignment="CENTER" spacing="30">
+
+    <Text text="COMPUTERIZATION OF VEHICLE DRIVING AND REGISTRATION SYSTEM"/>
+
+    <VBox alignment="CENTER" spacing="10">
+        <Text text="BY" />
+        <Text text="MOHAMMED O. AHMED" />
+        <Text text="ICT/1251630261" />
+    </VBox>
+
+    <Button text="Proceed" fx:id="btnProceed" onAction="#proceedHandler"/>
+</VBox>

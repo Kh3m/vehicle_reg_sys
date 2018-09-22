@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="vdlrs.controllers.TransactController"
+      prefHeight="400.0" prefWidth="600.0"
+      alignment="TOP_CENTER"
+      spacing="10">
+
+    <TableView fx:id="tbvTransact">
+        <columns>
+            <TableColumn text="Old Owners Name" fx:id="tcOldOwnersName"/>
+            <TableColumn text="New Owners Name" fx:id="tcNewOwnersName"/>
+            <TableColumn text="Date of Reg" fx:id="tcDateOfReg"/>
+            <TableColumn text="Old Owners Address" fx:id="tcOldOwnersAddress"/>
+            <TableColumn text="New Owners Address" fx:id="tcNewOwnersAddress"/>
+            <TableColumn text="Date of Change" fx:id="tcDateOfChange"/>
+            <TableColumn text="Reg No." fx:id="tcRegNo"/>
+            <TableColumn text="Receipt No." fx:id="tcReceiptNo"/>
+        </columns>
+
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+
+    <TitledPane text="Ownership Change Record" expanded="false">
+
+        <GridPane hgap="10" vgap="10">
+            <Label text="Old Owners Name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200" fx:id="txtOldOwnersName"/>
+            <Label text="Old Owners Address" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="200" fx:id="txtOldOwnersAddress"/>
+            <Label text="Registration Number" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+            <TextField GridPane.columnIndex="5" GridPane.rowIndex="0" prefWidth="200" fx:id="txtRegNo"/>
+
+            <Label text="New Owners Name" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="200" fx:id="txtNewOwnersName"/>
+            <Label text="New Owners Address" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="200" fx:id="txtNewwnersAddress"/>
+            <Label text="Receipt No." GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+            <TextField GridPane.columnIndex="5" GridPane.rowIndex="1" prefWidth="200" fx:id="txtReceiptNo"/>
+
+            <Label text="Date of Reg." GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="200" fx:id="dpDateOfReg"/>
+            <Label text="Date of Change" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <DatePicker GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="dpDateOfChange"/>
+
+            <Button GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.columnSpan="4" text="Change Ownership" prefWidth="200"
+                    onAction="#transactRegHandler"/>
+        </GridPane>
+
+    </TitledPane>
+
+</VBox>

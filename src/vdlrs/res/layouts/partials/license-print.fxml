@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+    <GridPane
+    xmlns="http://javafx.com/javafx"
+    prefHeight="400.0" prefWidth="600.0"
+    hgap="10" vgap="10">
+        <Label text="Reg No." GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200"/>
+        <Label text="Applicant Name" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <TextField GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="200"/>
+        <Label text="Date Issued" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+        <TextField GridPane.columnIndex="5" GridPane.rowIndex="0" prefWidth="200"/>
+
+        <Label text="Expiring Date" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="200"/>
+    </GridPane>
+
